@@ -295,7 +295,7 @@ function popularProduct() {
                   <div>
                 <span>👌 ${item.rating.rate} نفر پیشنهاد دادند</span>
                 <hr>
-                <span>${item.rating.count} نفر نظر داده‌اند 💡</span>
+                <span>${item.rating.count} نفر نظر داده‌اند </span>
             </div>
         <div class="mount-info">
           <span class="price">${formattedPrice}</span>
