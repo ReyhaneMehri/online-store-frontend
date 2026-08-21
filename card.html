@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>card</title>
+    <link href="./css/bootstrap.min.css" rel="stylesheet">
+    <link href="./css/style.css" rel="stylesheet">
+    <link href="./css/responsive.css" rel="stylesheet">
+    <link href="./css/all.min.css" rel="stylesheet">
+</head>
+
+<body>
+
+    <header class="header">
+        <div class="container-fluid">
+            <div class="desktop-header">
+                <div class="header-info">
+                    <div class="logo">
+                        <img src="./assets/image/logo.png">
+                    </div>
+                    <div class="menu-box">
+                        <nav>
+                            <ul class="menu">
+                                <li><a href="index.html">
+                                        <h6>خانه</h6>
+                                    </a></li>
+                                <li><a href="allProduct.html">
+                                        <h6>فروشگاه</h6>
+                                    </a></li>
+
+                                <li class="dropdown ">
+                                    <a href="#" class="align-items-center gap-1 d-flex flex-row-reverse">
+                                        <h6>لورم</h6><i class="fa-solid fa-caret-down mb-1 me-1"></i>
+                                    </a>
+                                    <ul class="sub-menu">
+                                        <li class="mx-5 pt-2"><a href="#">لورم</a></li>
+                                        <li class="mx-5 pt-2"><a href="#">لورم</a></li>
+                                        <li class="mx-5 pt-2"><a href="#">لورم</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="index.html#about">
+                                        <h6>درباره ما</h6>
+                                    </a></li>
+                            </ul>
+                        </nav>
+
+                    </div>
+                        <div class="entrance">
+                            <div class="shopping-icon">
+                                <a href="./card.html">
+                                    <span class="cart-badge">0</span>
+                                    <i class="fa fa-shopping-cart fa-2x text-secondary text-opacity-50 mt-2"></i>
+                                </a>
+                            </div>
+                            <div class="enter-btn">
+                                <a href="./login.html">
+                                    <button class="btn-login text-white">ورود/ثبت نام</button>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </header>
+
+    <section class="mobile-header">
+        <nav>
+            <a href="./login.html"><i class="fa-solid fa-user fa-2x"></i>کاربری</i></a>
+            <div class="shopping-icon">
+            <a href="./card.html"><i class="fa-solid fa-cart-shopping fa-2x"></i>سبد خرید</i>
+            <span class="cart-badge">0</span>
+            </a>
+            </div>
+            <a href="./allProduct.html"><i class="fa-solid fa-bag-shopping fa-2x"></i>محصولات</i></a>
+            <a class="active"><i class="fa-solid fa-house fa-2x"></i>خانه</i></a>
+        </nav>
+
+    </section>
+
+    <section id="product">
+
+        <div class="cart-content">
+            <div class="cart-heading">
+                <span>SHOPPING BAG</span>
+                <h1>سبد خرید</h1>
+                <p>محصولات انتخاب‌شده شما</p>
+            </div>
+            <div id="container-cart"></div>
+        </div>
+
+        <div class="order-summary">
+            <h3>خلاصه سفارش</h3>
+            <div class="summary-row">
+                <span>جمع کالاها</span>
+                <span id="subtotal">$145</span>
+            </div>
+            <div class="summary-row">
+                <span>تخفیف</span>
+                <span id="discount">$10</span>
+            </div>
+            <div class="summary-row">
+                <span>ارسال</span>
+                <span>رایگان</span>
+            </div>
+            <hr>
+            <div class="summary-total">
+                <span>مجموع</span>
+                <span id="total-price">$135</span>
+            </div>
+            <button class="checkout-btn">ادامه خرید</button>
+        </div>
+
+    </section>
+
+  
+<button
+    class="mobile-summary-btn"
+    type="button"
+    data-bs-toggle="offcanvas"
+    data-bs-target="#mobileOrderSummary"
+    aria-controls="mobileOrderSummary">
+
+    مشاهده خلاصه سفارش
+</button>
+
+<div
+    class="offcanvas offcanvas-bottom mobile-order-summary"
+    tabindex="-1"
+    id="mobileOrderSummary"
+    aria-labelledby="mobileOrderSummaryLabel">
+
+    <div class="offcanvas-header">
+        <div class="offcanvas-handle"></div>
+        <h5 class="offcanvas-title" id="mobileOrderSummaryLabel">
+            خلاصه سفارش
+        </h5>
+
+        <button
+            type="button"
+            class="btn-close"
+            data-bs-dismiss="offcanvas"
+            aria-label="Close">
+        </button>
+    </div>
+
+    <div class="offcanvas-body">
+
+        <div class="summery-row">
+            <span>جمع کالاها</span>
+            <span id="subtotal-mobile"></span>
+        </div>
+
+        <div class="summery-row">
+            <span>تخفیف</span>
+            <span id="discount-mobile">-$10</span>
+        </div>
+
+        <div class="summery-row">
+            <span>ارسال</span>
+            <span>رایگان</span>
+        </div>
+
+        <hr>
+
+        <div class="summery-total">
+            <span>مجموع</span>
+            <span id="total-price-mobile"></span>
+        </div>
+
+        <button class="checkout-btn">
+            ادامه فرایند خرید
+        </button>
+
+    </div>
+</div>
+    
+    <script src="./js/cart.js"></script>
+    <script src="./js/samedata.js"></script>
+    <script src="./js/bootstrap.bundle.min.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,133 @@
+
+#product-details{
+    margin-top: 10rem;
+}
+.product-details {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    align-items: start;
+}
+
+.product-image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.product-image img {
+    width: 100%;
+    max-width: 450px;
+    height: 450px;
+    object-fit: contain;
+    border: 1px solid #ddd;
+    padding: 25px;
+}
+
+.information {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+        margin-right: 45px;
+}
+
+.title {
+    margin: 0;
+    line-height: 1.6;
+}
+
+.divider-line {
+    width: 100%;
+    max-width: 666px;
+    border-top: 1px solid gray;
+}
+
+.rate {
+    display: flex;
+    gap: 30px;
+    align-items: center;
+}
+
+.describe {
+    max-width: 570px;
+    margin: 0;
+    line-height: 2;
+    margin: 0 0 76px 0;
+}
+
+.product-bottom {
+    display: grid;
+    align-items: start;
+    grid-template-columns: 1fr 1fr;
+    gap: 16rem;
+    margin-top: auto;
+}
+
+.price {
+    display: flex;
+    align-items: center;
+
+}
+
+.price h4 {
+    margin: 0;
+}
+.minus,
+.plus {
+    width: 45px;
+    height: 45px;
+    font-size: 24px;
+    font-weight: bold;
+    border-radius: 10px;
+    background: var(--lbrown);
+    color: white;
+    cursor: pointer;
+}
+
+.count {
+    display: inline-flex;
+    width: 45px;
+    height: 45px;
+    align-items: center;
+    justify-content: center;
+    font-size: 22px;
+    font-weight: bold;
+}
+.product-action .btn-add{
+    background-color: var(--lbrown);
+    color: white;
+    padding: 10px 33px;
+}
+.breadcrumb {
+    margin-bottom: 30px;
+    margin-right: 12px;
+}
+
+.breadcrumb ol {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin: 0;
+    padding: 0;
+    
+}
+
+.breadcrumb li {
+    font-size: 20px;
+    font-size: bolder;
+}
+
+.breadcrumb-arrow {
+    font-size: 20px;
+    color: black;
+}
+
+.breadcrumb a {
+    color: black;
+}
+
+.breadcrumb .active {
+    color: #4622d9;
+}
+.mobile-description{
+    display: none;
+}

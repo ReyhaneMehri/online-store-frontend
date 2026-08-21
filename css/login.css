@@ -1,0 +1,231 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root {
+  --lbrown: #98755b;
+}
+
+html,
+body {
+  height: 100%;
+  font-family: sans-serif;
+  line-height: 1.5;
+}
+
+a {
+  text-decoration: none !important;
+  color: inherit;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+button,
+input,
+textarea {
+  font: inherit;
+  border: none;
+  outline: none;
+}
+@font-face {
+  font-family: "b-yekan";
+  src:
+    url(../fonts/iranyekanwebregular.eot) format("eot"),
+    url(../fonts/iranyekanwebregular.ttf) format("ttf"),
+    url(../fonts/iranyekanwebregular.woff) format("woff");
+}
+@font-face {
+  font-family: "b-yekan-bold";
+  src:
+    url(../fonts/iranyekanwebbold.eot) format("eot"),
+    url(../fonts/iranyekanwebbold.ttf) format("ttf"),
+    url(../fonts/iranyekanwebbold.woff) format("woff");
+}
+body {
+  font-family: "b-yekan";
+  direction: rtl;
+  min-height: 100vh;
+  background-color: #98755b;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "b-yekan-bold";
+  font-weight: bold;
+}
+#enter{
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.container{
+  height: 600px;
+  width: 90%;
+  max-width: 1000px;
+  display: flex;
+  padding: 0;
+  overflow: hidden;
+  border-radius: 35px;
+}
+.login{
+    width: 50%;
+    padding: 60px;
+    height: 100%;
+    margin-left: 65px;
+
+}
+.login h2,
+.register-panel h2{
+  color: #f8f3e9;
+  font-size: 32px;
+  margin-bottom: 25px;
+}
+
+.login-message h2,
+.signin-message h2,h3{
+  color: #4e4d4c;
+}
+.inputs-width{
+  width: 293px;
+  margin-top: 1rem;
+ 
+}
+
+.register-panel{
+  width: 100%;
+  height: 100%;
+  padding-top: 40px;
+  padding-right: 89px;
+  transform: translateX(-100%);
+  opacity: 0;
+}
+.form-control{
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 18px;
+  color: #f8f3e9;
+  height: 60px;
+  padding-right: 20px;
+  backdrop-filter: blur(10px);
+}
+.form-control:focus{
+  background: rgba(255, 255, 255, 0.12);
+  border-color: #98755b;
+  box-shadow: 0 0 15px rgba(152, 117, 91, 0.35);
+  color: #f8f3e9;
+
+}
+.form-floating>label{
+  right: 0;
+  color: white;
+  left: auto;
+  transform-origin: right top;
+}
+.login-btn,
+.register-btn{
+  padding: 12px 35px;
+  margin-top: 20px;
+  border-radius: 30px;
+  margin-right: 85px;
+  color: black;
+  background: rgba(156, 139, 139, 0.2);
+  border: 1px solid rgba(70, 67, 67, 0.3);
+}
+.login-info-btn,
+.register-info-btn{
+  padding: 15px 70px;
+  border-radius: 30px;
+  margin: 30px 50px 10px 0;
+  background-color: #e1dbd7;
+  border: 1px solid rgba(70, 67, 67, 0.3);
+}
+.wrapper{
+  display: flex;
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+.login,
+.register-panel{
+  transition: 0.8s ease;
+}
+.login{
+  transform: translateX(0);
+  opacity: 1;
+}
+.inputs-width p{
+  color: rgb(200, 193, 193);
+  margin-top: 5px;
+}
+
+.login-side,
+.register-side  {
+  width: 100%;
+  height: 100%;
+}
+.login-message{
+  display: none;
+}
+
+.register-side,
+.login-side {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.signin-message,
+.login-message{
+  position: relative; 
+}
+.curve{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 50%;
+  height: 100%;
+  border-radius:300px 0 0 300px;
+  background-color: #f8f3e9;
+  transition: .8s ease;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.wrapper.active .login-message{
+  display: block;
+}
+.wrapper.active .signin-message{
+  display: none;
+}
+.wrapper.active .login{
+  transform: translateX(100%);
+  opacity: 0;
+}
+.wrapper.active .register-panel{
+  transform: translateX(0);
+  opacity: 1;
+}
+.wrapper.active .curve{
+  transform: translateX(400px);
+  border-radius: 0 300px 300px 0;
+ }
+.form-control.is-invalid, .was-validated .form-control:invalid{
+  background-position: left calc(.375em + .1875rem) center;
+}
+.form-control.is-valid, .was-validated .form-control:valid{
+  background-position: left calc(.375em + .1875rem) center;
+
+}
