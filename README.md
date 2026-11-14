@@ -76,13 +76,11 @@ This project focuses on implementing real-world front-end features, including AP
 ## 📂 Project Structure
 ```text
 online-store-frontend/
-│
 ├── index.html
 ├── allProduct.html
 ├── product.html
 ├── card.html
 ├── login.html
-│
 ├── css/
 │   ├── style.css
 │   ├── allProduct.css
@@ -92,7 +90,6 @@ online-store-frontend/
 │   ├── bootstrap.css
 │   ├── bootstrap.min.css
 │   └── all.min.css
-│
 ├── js/
 │   ├── main.js
 │   ├── allProduct.js
@@ -101,14 +98,12 @@ online-store-frontend/
 │   ├── login.js
 │   ├── samedata.js
 │   └── bootstrap.bundle.min.js
-│
 ├── fonts/
 ├── webfonts/
 ├── screenshot/
 │   ├── desktop-home.png
 │   ├── mobile-home.png
 │   └── mobile-home-full.png
-│
 └── README.md
 ```
 ## 🎯 Project Purpose
