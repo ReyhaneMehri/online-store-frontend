@@ -74,7 +74,7 @@ This project focuses on implementing real-world front-end features, including AP
 - Responsive UI Development
 
 ## 📂 Project Structure
-
+```text
 online-store-frontend/
 │
 ├── index.html
@@ -110,6 +110,7 @@ online-store-frontend/
 │   └── mobile-home-full.png
 │
 └── README.md
+```
 ## 🎯 Project Purpose
 
 The main purpose of this project was to strengthen my front-end development skills by building a functional e-commerce website.
