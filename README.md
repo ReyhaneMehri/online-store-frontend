@@ -84,9 +84,30 @@ online-store-frontend/
 ├── login.html
 │
 ├── css/
+│   ├── style.css
+│   ├── allProduct.css
+│   ├── product.css
+│   ├── login.css
+│   ├── responsive.css
+│   ├── bootstrap.css
+│   ├── bootstrap.min.css
+│   └── all.min.css
+│
 ├── js/
-├── assets/
+│   ├── main.js
+│   ├── allProduct.js
+│   ├── product.js
+│   ├── cart.js
+│   ├── login.js
+│   ├── samedata.js
+│   └── bootstrap.bundle.min.js
+│
+├── fonts/
+├── webfonts/
 ├── screenshot/
+│   ├── desktop-home.png
+│   ├── mobile-home.png
+│   └── mobile-home-full.png
 │
 └── README.md
 ## 🎯 Project Purpose
